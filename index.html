@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>História de Erechim</title>
 </head>
-
 <body>
     <header>
         <div class="logo">PRAÇA DO IMIGRANTE</div>
@@ -20,7 +18,7 @@
             </ul>
         </nav>
     </header>
-
+    
     <section class="hero">
         <h1>Conhecendo a História de Erechim...</h1>
         <h3>Erechim, também chamada de "Capital da Amizade" e "Terra dos Bota-Amarelas",
@@ -49,16 +47,42 @@
         </h4>
     </section>
 
-    <div class="image-gallery">
-        <img src="prefeitura.png" alt="Imagem 1">
-        <img src="avenida.png" alt="Imagem 2">
-        <img src="castelinho.png" alt="Imagem 3">
-        <img src="igreja.png" alt="Imagem 3">
+      <div class="image-gallery">
+        <img src="prefeitura.png" alt="Imagem 1" data-description="<strong>Avenida Maurício Cardoso, 1953 </strong> -  Depois de uma série de pequenos incêndios
+        ocorridos no ano de 1929, três grandes incêndios na década de 1930 contribuíram para que o ciclo das construções
+        em madeira chegasse ao fim em Boa Vista.O primeiro destes fogaréus, em 1931, teve início no Cinema Avenida, destruindo 12 casas.
+        O segundo, no ano seguinte, destruiu 11 residências na Avenida José Bonifácio (hoje Avenida Maurício Cardoso).
+        O terceiro, em 1933, além de queimar cinco casas na mesma Avenida, deixou uma vítima fatal. A série de infortúnios provocou
+        questionamentos em relação à causa dos sinistros. Todas as edificações queimadas estavam seguradas, sendo os proprietários ressarcidos
+        pela Seguradora Livonius Ltda. A Avenida foi apelidada de Avenida Livonius.">
+        <img src="avenida.png" alt="Imagem 2" data-description="<strong>Prefeitura Municipal de Erechim, 1985</strong> - O andar térreo do prédio da Prefeitura Municipal
+        ostenta grades de ferro, tendo funcionado como
+        cadeia - casa prisional - entre 1932 e anos seguintes.">
+        <img src="castelinho.png" alt="Imagem 3" data-description="<strong> Castelinho: Local onde funcionava a Comissão de Terras</strong> - Na Revolução de
+        1923 transformou-se num hospital para atender os chimangos. Instalada, inicialmente, em
+        Erechim (hoje Getúlio Vargas), a sede da unidade foi
+        transferida a Paiol Grande (atual Erechim) em 1916,
+        no prédio que é conhecido
+        como Castelinho, construído entre 1912 e 1915.">
+        <img src="igreja.png" alt="Imagem 4" data-description="<strong>Igreja Matriz São José, década de 20</strong>  - A primeira construção religiosa
+        de Paiol Grande, em 1913, foi uma capela, erguida pelos esforços de Elisa Vacchi – líder da religião católica. Porém, conta Ducatti Netto,
+        em 1911 já havia sido celebrada pelo padre Alberto Scheumann, de Getúlio Vargas, a primeira missa do povoado, tendo como local uma
+        casa construída nas proximidades da estação ferroviária. Em 1919, foi criada a Paróquia de Erechim, concedendo a esta o padroeiro São José – que daria origem
+        ao nome da Catedral São José, sede de três grandes painéis, com 14 quadros da Via-Sacra e símbolos
+        em baixo-relevo, erigida durante os anos de 1969 e 1977">
     </div>
-
+    
+    <div id="description-box" class="description-box">
+        <span id="close-btn" class="close-btn">&times;</span>
+        <p id="description-text"></p>
+    </div>
+    
+   
     <footer>
-
+      
     </footer>
-</body>
 
+    <!-- Link para o arquivo JS -->
+    <script src="index.js"></script>
+</body>
 </html>
