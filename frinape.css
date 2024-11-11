@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: rgba(242, 218, 189, 0.614);
+}
+
+header {
+    background-color: #9e5e16af;
+    padding: 20px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(249, 239, 218);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    color: rgb(249, 239, 218);
+}
+
+.hero {
+    background: url('frinape/frinape.jpg') no-repeat center center/cover;
+    background-color: rgba(255, 234, 207, 0.8);
+    color: rgb(249, 239, 218);
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1,
+.hero h3 {
+    position: relative;
+    z-index: 4;
+    padding: 20 px;
+    line-height: 1.5;
+}
+
+/* Estilo geral da seção Frinape */
+.frinape {
+    margin: 40px;
+    padding: 20px; /* Espaço interno */
+    border: 3px solid #9e5e16af;
+    border-radius: 10px;
+    background-color: rgba(242, 218, 189, 0.6);
+}
+
+/* Centralizando a imagem de todas */
+.group-photo {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.group-photo img {
+    max-width: 100%;
+    width: 800px; /* Ajustando o tamanho */
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+
+/* Organizando a rainha e as princesas */
+.queen-and-princesses {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+/* Rainha maior à esquerda */
+.queen {
+    width: 45%;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.queen img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
+}
+
+/* Efeito de hover na rainha */
+.queen img:hover {
+    transform: scale(1.05); /* Aumenta o tamanho da imagem ao passar o mouse */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Sombra mais forte ao passar o mouse */
+}
+
+/* Princesas à direita */
+.princesses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 55%;
+    gap: 10px;
+}
+
+.princess {
+    text-align: center;
+    width: 30%;
+}
+
+.princess img {
+    width: 100%;
+    height: auto;
+    max-width: 130px;
+    margin-bottom: 5px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover nas princesas */
+.princess img:hover {
+    transform: scale(1.05); /* Aumenta o tamanho da imagem ao passar o mouse */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte ao passar o mouse */
+}
+
+p {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border: 2px solid #d1710a;
+    border-radius: 20px;
+    /* Borda arredondada */
+    padding: 10px 10px;
+    line-height: 1.2;
+
+    margin: 5px auto;
+    background-color: rgba(255, 234, 207, 0.8);
+    /* Fundo semitransparente */
+}
+
+.frinape {
+    margin-bottom: 20px;
+}
+
+.frinape h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.frinape p {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.edition-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.edition-card {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.edition-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}

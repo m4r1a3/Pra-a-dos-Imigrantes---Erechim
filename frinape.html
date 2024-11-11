@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frinape.css">
+    <title>Rainhas e Princesas da Frinape</title>
+    <style>
+        /* Estilos do modal */
+        .modal {
+            display: none; /* Esconde o modal por padrão */
+            position: fixed;
+            z-index: 9999; /* Coloca o modal na frente de tudo */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semi-transparente */
+            overflow: auto; /* Habilita o scroll, caso a imagem seja maior que a tela */
+            padding-top: 60px; /* Espaço acima da imagem */
+        }
+
+        /* Estilo da imagem dentro do modal */
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%; /* Faz a imagem ter um tamanho razoável */
+            max-height: 80%; /* Faz a imagem não ultrapassar o tamanho da tela */
+        }
+
+        /* Estilo da legenda abaixo da imagem */
+        #caption {
+            text-align: center;
+            color: #ccc;
+            padding: 10px;
+        }
+
+        /* Botão de fechar o modal */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">PRAÇA DO IMIGRANTE</div>
+        <nav>
+            <ul>
+                <li><a href="praca.html">Praça</a></li>
+                <li><a href="index.html">História</a></li>
+                <li><a href="projeto.html">Sobre o Projeto</a></li>
+                <li><a href="frinape.html">Frinape</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Rainhas e Princesas da Frinape</h1>
+        <h3>A FRINAPE é uma grande feira da Região do Alto Uruguai, que busca valorizar e divulgar os potenciais da comunidade regional. Cada edição da feira possui uma Corte, formada por uma Rainha, anteriormente duas princessas e outras princesas de diferentes etnias (afro-brasileira, nativa, alemã, italiana, polonesa e israelita) que representam a diversidade cultural de Erechim e região.</h3>
+    </section>
+
+    <section class="frinape">
+        <h2>Frinape XVIII - 2024</h2>
+        <div class="group-photo">
+            <img src="frinape/2024/todas.png" alt="Rainha e Princesas 2024" class="clickable-img">
+        </div>
+        <div class="queen-and-princesses">
+            <div class="queen">
+                <img src="frinape/2024/rainha.jpg" alt="Rainha 2024" class="clickable-img">
+                <h1>A Rainha 2024: Gabriele Banaseski Erthal</h1>
+            </div>
+            <div class="princesses">
+                <div class="princess">
+                    <img src="frinape/2024/afro.jpg" alt="Princesa 2024" class="clickable-img">
+                    <p>Princesa Afro-Brasileira: Cristina Oliveira dos Santos</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2024/nativa.jpg" alt="Princesa 2024" class="clickable-img">
+                    <p>Princesa Nativa: Maikely Moreira</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2024/italiana.jpg" alt="Princesa 2024" class="clickable-img">
+                    <p>Princesa Italiana: Lívia Scalabrin</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2024/polonesa.jpg" alt="Princesa 2024" class="clickable-img">
+                    <p>Princesa Polonesa: Joana Bielski Kozak</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2024/alema.jpg" alt="Princesa 2024" class="clickable-img">
+                    <p>Princesa Alemã: Laura Schneider Wermann</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2024/prenda.jpg" alt="Princesa 2024" class="clickable-img">
+                    <p>Prenda: Julia França Santin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="frinape">
+        <h2>Frinape XVII - 2022</h2>
+        <div class="group-photo">
+            <img src="frinape/2022/todas.jpg" alt="Rainha e Princesas 2022" class="clickable-img">
+        </div>
+        <div class="queen-and-princesses">
+            <div class="queen">
+                <img src="frinape/2022/rainha.jpg" alt="Rainha 2022" class="clickable-img">
+                <h1>A Rainha 2022: Nathália Gonçalves Spagnol</h1>
+            </div>
+            <div class="princesses">
+                <div class="princess">
+                    <img src="frinape/2022/princesas.jpg" alt="Princesa 2022" class="clickable-img">
+                    <p>Princesas: Laura Skomra Pezzin e Sabrina Boller</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2022/afro.jpg" alt="Princesa 2022" class="clickable-img">
+                    <p>Princesa Afro-Brasileira: Eduarda Barroso Alves Borges</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2022/nativa.jpg" alt="Princesa 2022" class="clickable-img">
+                    <p>Princesa Nativa: Anandai Sabrina Fátima Farias</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2022/italiana.jpg" alt="Princesa 2022" class="clickable-img">
+                    <p>Princesa Italiana: Isadora Balestrin Cavaletti</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2022/polonesa.jpg" alt="Princesa 2022" class="clickable-img">
+                    <p>Princesa Polonesa: Maria Eduarda Wlodarkievicz</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2022/alema.jpg" alt="Princesa 2022" class="clickable-img">
+                    <p>Princesa Alemã: Marina Muller Regla</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2022/prenda.jpg" alt="Princesa 2022" class="clickable-img">
+                    <p>Prenda: Letícia do Nascimento Nazari</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="frinape">
+        <h2>Frinape XVI - 2018</h2>
+        <div class="group-photo">
+            <img src="frinape/2018/todas.png" alt="Rainha e Princesas 2018" class="clickable-img">
+        </div>
+        <div class="queen-and-princesses">
+            <div class="queen">
+                <img src="frinape/2018/rainha.png" alt="Rainha 2018" class="clickable-img">
+                <h1>A Rainha 2018: Talita Stefani Lorenzetti</h1>
+                <h1>Princesas: Naíra Eliza Menegat e Patrícia Pilar Kubiak</h1>
+            </div>
+            <div class="princesses">
+                <div class="princess">
+                    <img src="frinape/2018/afro.jpg" alt="Princesa 2018" class="clickable-img">
+                    <p>Princesa Afro-Brasileira: Kelly Roberta dos Santos Struns</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2018/nativa.jpg" alt="Princesa 2018" class="clickable-img">
+                    <p>Princesa Nativa: Meridielli Cristina Braga</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2018/italiana.jpg" alt="Princesa 2018" class="clickable-img">
+                    <p>Princesa Italiana: Sabrina Dalla Rosa</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2018/polonesa.png" alt="Princesa 2018" class="clickable-img">
+                    <p>Princesa Polonesa: Eduarda Szynkaruk Forest</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2018/alema.jpg" alt="Princesa 2018" class="clickable-img">
+                    <p>Princesa Alemã: Júlia Bertolla Bichoff</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2018/prenda.jpg" alt="Princesa 2018" class="clickable-img">
+                    <p>Prenda: Laura Laís Durli</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="frinape">
+        <h2>Frinape XV - 2015</h2>
+        <div class="group-photo">
+            <img src="frinape/2015/todas.jpg" alt="Rainha e Princesas 2015" class="clickable-img">
+        </div>
+        <div class="queen-and-princesses">
+            <div class="queen">
+                <img src="frinape/2015/rainha.jpg" alt="Rainha 2015" class="clickable-img">
+                <h1>A Rainha 2015: Laura Pedott Lansana</h1>
+            </div>
+            <div class="princesses">
+                <div class="princess">
+                    <img src="frinape/2015/princesas.jpg" alt="Princesa 2015" class="clickable-img">
+                    <p>Princesas: Kalisley Ferrantti e Lurian Fenske</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2015/afro.jpg" alt="Princesa 2015" class="clickable-img">
+                    <p>Princesa Afro-Brasileira: Carolina Nunes Soares</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2015/nativa.jpg" alt="Princesa 2015" class="clickable-img">
+                    <p>Princesa Nativa: Schirley Marinello</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2015/italiana.jpg" alt="Princesa 2015" class="clickable-img">
+                    <p>Princesa Italiana: Gabriela Comin</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2015/polonesa.jpg" alt="Princesa 2015" class="clickable-img">
+                    <p>Princesa Polonesa: Gabriela Stankiewicz</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2015/alema.jpg" alt="Princesa 2015" class="clickable-img">
+                    <p>Princesa Alemã: Maria Cristhina Tonatto Hillesheim</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2015/prenda.jpg" alt="Princesa 2015" class="clickable-img">
+                    <p>Prenda: Nathália Gonçalves Spagnol</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="frinape">
+        <h2>Frinape XIV - 2013</h2>
+        <div class="group-photo">
+            <img src="frinape/2013/todas.jpg" alt="Rainha e Princesas 2013" class="clickable-img">
+        </div>
+        <div class="queen-and-princesses">
+            <div class="queen">
+                <img src="frinape/2013/rainha.jpg" alt="Rainha 2013" class="clickable-img">
+                <h1>A Rainha 2013: Caren Santolin</h1>
+            </div>
+            <div class="princesses">
+                <div class="princess">
+                    <img src="frinape/2013/princesas.jpg" alt="Princesa 2013" class="clickable-img">
+                    <p>Princesas: Julia Vanzo e Franciele Rohr</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2013/nativa.jpg" alt="Princesa 2013" class="clickable-img">
+                    <p>Princesa Nativa: Caroline Licodiedoff de Souza</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2013/italiana.jpg" alt="Princesa 2013" class="clickable-img">
+                    <p>Princesa Italiana: Betina Pezzin</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2013/polonesa.jpg" alt="Princesa 2013" class="clickable-img">
+                    <p>Princesa Polonesa: Victoria Magda Kaplan</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2013/alema.jpg" alt="Princesa 2013" class="clickable-img">
+                    <p>Princesa Alemã: Nicole Cervi Dexheimer</p>
+                </div>
+                <div class="princess">
+                    <img src="frinape/2013/prenda.jpg" alt="Princesa 2013" class="clickable-img">
+                    <p>Prenda: Daniela Bonet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="frinape">
+        <h2>Demais Edições</h2>
+        <div class="edition-grid">
+            <div class="edition-card">
+                <h3>Frinape XIII - 2010</h3>
+                <p><strong>Rainha:</strong> Lívia Condah Kaghofer</p>
+                <p><strong>Corte:</strong> Princesas Franciele Roberta Rohr e Karine Rochele Anzanello, as Princesas Étnicas Israelita, Sophia Etges Arenzon; Alemã, Isadora Bassani Fahl; Polonesa, Ana Marta Popoaski; e Italiana, Betina Munero Predebon; Nativa, Ana Carolina Silva Ribeiro; e Prenda Janaina Vargas Dutra.</p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape XII - 2008</h3>
+                <p><strong>Rainha:</strong> Elise Andreolla</p>
+                <p><strong>Princesas:</strong> Fernanda Nora de Moraes e Joana Lando Bellani. Princesas étnicas: Kamila Delazeri Baidek – Polonesa, Rafaela Martins Sponchiado – Italiana, Letícia Pottker – Alemã, Ilana Kives – Israelita, Monique Maína Milkiewicz – Nativa, Aniele de Oliveira Carraro – Prenda.</p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape XI - 2004</h3>
+                <p><strong>Rainha:</strong> Franciele Lucia Saccon</p>
+                <p><strong>Princesas:</strong> Marília Sfredo Krüger, Virgínea Rebonatto Ferretto. <strong>Princesas étnicas:</strong> Ana Paula Donis Bueno – Polonesa, Daniela Regina Durli – Italiana, Samantha Zambonatto Johann – Alemã, Rosana Silverston Baron – Israelita, Maíne da Silva Moreira – Nativa, Ângela Marta Nogueira – Prenda.</p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape X - 2001</h3>
+                <p><strong>Rainha:</strong> Rosane Portela</p>
+                <p><strong>Princesas:</strong> Daiele Morandini e Juliana Dallagnol. Princesas das etnias: Caroline Maria Sonda – Italiana, Camile Wenclewski Scotti – Polonesa, Carla da Silva Ribeiro – Nativa, Rosana Silverston Baron – Israelita, Talita Loss – Alemã e a prenda Tatiana Mazzoti.</p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape IX - 1999</h3>
+                <p><strong>Rainha:</strong> Tainete Farina</p>
+                <p><strong>Princesas:</strong> Gizéle de Mello Vargas, Fernanda Munaretto, Catiane Zanin e Cristiane de Marchi. Princesas étnicas: Helenise Savoldi – Italiana, Andréa Mignoni – Polonesa, Juliana Vieira – Nativa, Liane Henkin – Israelita, e Viviane Loch – Alemã. Prenda: Giovana Naziloski. </p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape VIII - 1995</h3>
+                <p><strong>Rainha:</strong> Daniele Balvedi Pagliosa</p>
+                <p>1ª Prenda da FENAMATE: Giana Oldra. Princesas étnicas: Luciana De Marchi – Italiana, Andréia Stankiewicz – Polonesa, Giovana Dalla Rosa Veiga – Nativa, Mariash Marçal – Israelita, e Zíngara Geib – Alemã</p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape VII - 1992</h3>
+                <p><strong>Rainha:</strong> Cleomara Regozo</p>
+                <p><strong>Princesas:</strong> Karime Tonin – Italiana, Vivian Skzypek – Polonesa, Andréa de Oliveira Machado – Nativa, Silvana Roismann – Israelita, e Daniela Kopp – Alemã</p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape VI - 1990</h3>
+                <p><strong>Rainha:</strong> Débora Lunardi</p>
+                <p><strong>Princesas:</strong> Luciana Pessin – Italiana, Cristiane Stankiewicz – Polonesa, Vanderlice Sonza – Nativa, Miriam Agranionik – Israelita, e Luciana Schneider – Alemã</p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape V - 1987</h3>
+                <p><strong>Rainha:</strong> Gabriele Menegati</p>
+                <p><strong>Princesas:</strong> Matilde Tormen – Italiana, Marjara Ruszczyk- Polonesa, Liliane Tramontini – Nativa, Mônica Roismann – Israelita, e Carla Lisandra Wildmann – Alemã</p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape IV - 1984</h3>
+                <p><strong>Rainha:</strong> Kátia Franklin da Silva</p>
+                <p><strong>Princesas:</strong> Denise Zanardo – Italiana, Nara Taísa Mocva – Polonesa, Sônia Faitão – Nativa, Célia Schuchmann – Israelita, e Lia Paula Porscher – Alemã</p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape III - 1982</h3>
+                <p><strong>Rainha:</strong> Yáskara Speracke</p>
+                <p><strong>Princesas:</strong> Marta Tonin – Italiana, Adriana Linkiewski – Polonesa, Mônica Fünfgelt – Alemã, Sônia Gotler – Israelita</p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape II - 1968</h3>
+                <p><strong>Rainha:</strong> Levita Tagliari</p>
+            </div>
+            <div class="edition-card">
+                <h3>Frinape I - 1966</h3>
+                <p><strong>Rainha:</strong> Juracema Valandro</p>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    
+
+    
+
+    <footer></footer>
+
+    <!-- Modal para imagem em tamanho grande -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Variáveis
+        var modal = document.getElementById("modal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var images = document.querySelectorAll('.clickable-img');
+        var close = document.getElementsByClassName("close")[0];
+
+        // Função para abrir o modal e mostrar a imagem clicada
+        images.forEach(function(image) {
+            image.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        });
+
+        // Função para fechar o modal
+        close.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
+

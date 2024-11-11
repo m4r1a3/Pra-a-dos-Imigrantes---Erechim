@@ -1,0 +1,121 @@
+/*Geral*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: rgba(242, 218, 189, 0.614);
+}
+
+/*Cabeçalho*/
+header {
+    background-color: #9e5e16af;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(249, 239, 218);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    color: rgb(249, 239, 218);
+}
+
+nav a:hover {
+    color: #ffdd9b;
+}
+
+/*Seção Hero*/
+.hero {
+    background: url('erechimantiga.jpg') no-repeat center center/cover;
+    background-color: rgba(255, 234, 207, 0.8);
+    color: rgb(249, 239, 218);
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent overlay */
+    z-index: 1;
+}
+
+.hero h1, .hero h3, .stats {
+    position: relative;
+    z-index: 2;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stats div {
+    font-size: 1.2em;
+}
+
+/*Projeto*/
+.historia {
+    margin: 65px;
+    padding: 20px; /* Espaço interno */
+    border: 3px solid #9e5e16af;
+    border-radius: 10px;
+    background-color: rgba(242, 218, 189, 0.6);
+}
+
+h4 {
+    font-size: 15.5px;
+    color: rgb(0, 0, 0);
+    padding: 20px 30px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centraliza as imagens horizontalmente */
+    gap: 20px;
+    /* Espaçamento entre as imagens */
+    margin-top: 20px;
+    /* Espaço acima das imagens */
+}
+
+.image-gallery img {
+    width: 200px;
+    /* Largura de cada imagem */
+    height: auto;
+    /* Mantém a proporção das imagens */
+    margin-bottom: 20px;
+}
+
+/*Rodapé*/
+footer {
+    background-color: #9e5e16af;
+    padding: 20px;
+    text-align: center;
+}
