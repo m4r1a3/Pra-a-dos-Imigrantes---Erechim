@@ -218,4 +218,24 @@ footer {
     margin: auto;
     align-items: center;
 }
+.descricao {
+    background-color: rgba(255, 234, 207, 0.9);
+    border: 2px solid #d1710a;
+    border-radius: 10px;
+    padding: 30px;
+    width: 60%;
+    margin: 30px auto;
+    text-align: justify;
+    line-height: 1.6;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.descricao h1 {
+    text-align: center;
+    color: #9e5e16;
+}
+
+.descricao p {
+    color: #333;
+}
 
